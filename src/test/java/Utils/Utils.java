@@ -16,9 +16,9 @@ public class Utils {
         Configuration.screenshots = false;
     }
 
-    @AfterMethod
-    public void afterMethod() {
-        AllureHelpers.takeScreenshot();
-    }
+//    @AfterMethod
+//    public void afterMethod() {
+//        AllureHelpers.takeScreenshot();
+//    }
 
 }
