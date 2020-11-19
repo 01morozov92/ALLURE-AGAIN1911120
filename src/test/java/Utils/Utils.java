@@ -17,7 +17,7 @@ public class Utils {
         Configuration.headless = true;
     }
 
-    @AfterStep
+    @AfterMethod
     public void afterMethod() {
         AllureHelpers.takeScreenshot();
     }
