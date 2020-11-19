@@ -19,11 +19,11 @@ public class AllureTEst extends Utils {
     Steps steps = new Steps();
 
 
-//    @Description("Вывожу на экран сообщение")
-//    @Test(alwaysRun = true)
-//    public void allureTestOne() {
-//        steps.goToSite();
-//    }
+    @Description("Вывожу на экран сообщение")
+    @Test(alwaysRun = true)
+    public void allureTestOne() {
+        steps.goToSite();
+    }
 
 
     @Description("Проверяем элемент на отображение")
