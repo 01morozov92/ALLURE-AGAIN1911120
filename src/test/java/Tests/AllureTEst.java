@@ -5,7 +5,6 @@ import Steps.Steps;
 import Utils.Utils;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
-import io.cucumber.java.eo.Se;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
