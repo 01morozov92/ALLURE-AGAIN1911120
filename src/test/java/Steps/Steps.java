@@ -27,6 +27,7 @@ public class Steps extends AllureHelpers{
         try {
             element.click();
         } catch (Exception e) {
+            takeScreenshot();
             e.printStackTrace();
             fail("Клик по элементу не удался");
         }
