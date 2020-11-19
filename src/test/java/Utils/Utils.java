@@ -19,7 +19,6 @@ public class Utils {
     @AfterMethod
     public void afterMethod() {
         AllureHelpers.takeScreenshot();
-        closeWebDriver();
     }
 
 }
