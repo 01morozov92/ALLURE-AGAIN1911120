@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="My suite" parallel="methods" thread-count="5">
+    <test name="Тест Аллюр Мороз">
+        <classes>
+            <class name="Tests.AllureTEst"/>
+        </classes>
+    </test>
+</suite>
