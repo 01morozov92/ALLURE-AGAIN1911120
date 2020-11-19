@@ -17,8 +17,8 @@ public class Steps extends AllureHelpers{
     @Step("Ищем элемент")
     public void checkButton(SelenideElement element){
             if(!element.isDisplayed()){
-                fail("Элемент не отображается!");
                 AllureHelpers.takeScreenshot();
+                fail("Элемент не отображается!");
             }
     }
 
