@@ -16,12 +16,10 @@ public class Steps extends AllureHelpers{
 
     @Step("Ищем элемент")
     public void checkButton(SelenideElement element){
-        try {
-            element.isDisplayed();
-        } catch (Exception e) {
-            e.printStackTrace();
-            fail("Элемент не найден");
-        }
+            if(!element.isDisplayed()){
+                fail("Элемент не отображается!");
+                AllureHelpers.takeScreenshot();
+            }
     }
 
     @Step("Кликаем на элемент")
