@@ -19,11 +19,11 @@ public class AllureTEst extends Utils {
     Steps steps = new Steps();
 
 
-    @Description("Вывожу на экран сообщение")
-    @Test(alwaysRun = true)
-    public void allureTestOne() {
-        steps.goToSite();
-    }
+//    @Description("Вывожу на экран сообщение")
+//    @Test(alwaysRun = true)
+//    public void allureTestOne() {
+//        steps.goToSite();
+//    }
 
 
     @Description("Проверяем элемент на отображение")
@@ -32,7 +32,7 @@ public class AllureTEst extends Utils {
         steps.goToSite();
         steps.checkButton(button);
         steps.clickOnElem(imagesButton);
-        Selenide.switchTo().window(1);
-        steps.checkButton(searchButton);
+//        Selenide.switchTo().window(1);
+//        steps.checkButton(searchButton);
     }
 }
