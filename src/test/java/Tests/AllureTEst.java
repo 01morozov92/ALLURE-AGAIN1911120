@@ -32,7 +32,7 @@ public class AllureTEst extends Utils {
         steps.goToSite();
         steps.checkButton(button);
         steps.clickOnElem(imagesButton);
-//        Selenide.switchTo().window(1);
-//        steps.checkButton(searchButton);
+        Selenide.switchTo().window(1);
+        steps.checkButton(searchButton);
     }
 }
