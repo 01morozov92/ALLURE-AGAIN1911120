@@ -11,7 +11,7 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-        System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "var/jenkins_home/chromedriver");
         Configuration.reportsFolder = "target/allure-results";
         Configuration.screenshots = false;
         Configuration.headless = true;
