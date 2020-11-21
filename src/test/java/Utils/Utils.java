@@ -10,8 +10,6 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-        WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/Yqe3OqUV6mq49g");
         Configuration.reportsFolder = "target/allure-results";
         Configuration.screenshots = false;
         Configuration.headless = true;
