@@ -26,13 +26,13 @@ public class AllureTEst extends Utils {
     }
 
 
-    @Description("Проверяем элемент на отображение")
-    @Test
-    public void checkButtonYandexTest() {
-        steps.goToSite();
-        steps.checkButton(button);
-        steps.clickOnElem(imagesButton);
-        Selenide.switchTo().window(1);
-        steps.checkButton(searchButton);
-    }
+//    @Description("Проверяем элемент на отображение")
+//    @Test
+//    public void checkButtonYandexTest() {
+//        steps.goToSite();
+//        steps.checkButton(button);
+//        steps.clickOnElem(imagesButton);
+//        Selenide.switchTo().window(1);
+//        steps.checkButton(searchButton);
+//    }
 }
