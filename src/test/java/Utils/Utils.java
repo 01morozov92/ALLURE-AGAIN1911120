@@ -11,7 +11,7 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
         Configuration.reportsFolder = "target/allure-results";
         Configuration.screenshots = false;
         Configuration.headless = true;
