@@ -1,9 +1,7 @@
 package Utils;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 
@@ -18,10 +16,10 @@ public class Utils {
         Configuration.screenshots = false;
         Configuration.headless = true;
     }
-
-    @AfterMethod
-    public void afterMethod() {
-        AllureHelpers.takeScreenshot();
-    }
+//
+//    @AfterMethod
+//    public void afterMethod() {
+//        AllureHelpers.takeScreenshot();
+//    }
 
 }
