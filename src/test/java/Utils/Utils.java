@@ -10,7 +10,7 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "home/jenkins/Yqe3OqUV6mq49g");
         Configuration.reportsFolder = "target/allure-results";
 //        Configuration.browserBinary = "/usr/bin/google-chrome";
         Configuration.screenshots = false;
