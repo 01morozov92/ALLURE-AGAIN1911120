@@ -12,12 +12,16 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-        ChromeOptions cap = new ChromeOptions();
-        cap.addArguments("--no-sandbox");
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        options.addArguments("--no-sandbox"); // Bypass OS security model
+
         Configuration.reportsFolder = "target/allure-results";
-        Configuration.screenshots = false;
-        Configuration.headless = true;
-        Configuration.baseUrl = "http://35.228.120.124:8080";
     }
 //
 //    @AfterMethod
