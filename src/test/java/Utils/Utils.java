@@ -10,12 +10,10 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
-//        WebDriverManager.chromiumdriver();
         Configuration.reportsFolder = "target/allure-results";
-//        Configuration.browserBinary = "/usr/bin/google-chrome";
         Configuration.screenshots = false;
-//        Configuration.holdBrowserOpen = true;
-//        Configuration.headless = true;
+        Configuration.headless = true;
+        Configuration.baseUrl = "http://35.228.120.124:8080";
     }
 //
 //    @AfterMethod
