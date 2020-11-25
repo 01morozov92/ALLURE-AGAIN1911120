@@ -10,10 +10,11 @@ public class Utils {
 
     @BeforeClass
     public static void beforeClass() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
         Configuration.reportsFolder = "target/allure-results";
-        Configuration.browserBinary = "/usr/bin/google-chrome";
+//        Configuration.browserBinary = "/usr/bin/google-chrome";
         Configuration.screenshots = false;
-        Configuration.holdBrowserOpen = true;
+//        Configuration.holdBrowserOpen = true;
         Configuration.headless = true;
     }
 //
