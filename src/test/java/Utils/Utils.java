@@ -12,6 +12,8 @@ public class Utils {
     public static void beforeClass() {
         Configuration.reportsFolder = "target/allure-results";
         Configuration.screenshots = false;
+        Configuration.holdBrowserOpen = true;
+        Configuration.browserBinary = "/usr/bin/google-chrome";
         Configuration.headless = true;
     }
 //
